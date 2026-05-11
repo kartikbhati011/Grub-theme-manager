@@ -1,0 +1,92 @@
+
+# Copyright (C) 2017 Moldovan Cosmin <moldovancosmin69@gmail.com>
+
+# general settings
+ title-text: "SELECT YOUR OPERATING SYSTEM"
+ title-color: "#3ec6ae"
+ message-font: "DejaVu Sans Regular 14"
+ message-color: "#fd262e"
+ message-bg-color: "#808080"
+ desktop-image: "background.png"
+ desktop-color: "#808080"
+ terminal-font: "DejaVu Sans Regular 14"
+
+# Logo SAO
++ image { 
+    left = 40%
+    top = 75%
+    width = 216
+    height = 45
+    file = "sao-logo-45.png"
+}
+
+# Titre menu
++ label {
+	top = 10%
+	left = 7%
+	width = 50%
+	height = 40
+	text = ""
+	align = "center"
+	font = "DroidLogo Bold 26"
+	color = "#fefefe"
+}
+# boot menu
++ boot_menu {
+    left = 33%
+    width = 30%
+    top = 44%
+    height = 45%	
+    item_font = "DroidLogo Regular 17"
+    item_color = "#1c5c51"
+    selected_item_font = "DroidLogo Regular 17"
+    selected_item_color = "#fefefe"
+    icon_width = 16
+    icon_height = 16
+    item_height = 33
+    item_padding = 20
+    item_icon_space = 5
+    item_spacing = 5
+    menu_pixmap_style = "boot_menu2_*.png"
+    selected_item_pixmap_style = "highlight_*.png"
+}
+
+# Show logo and circular progress
++ circular_progress
+{
+   id = "__timeout__"
+   left = 43%
+   top = 72
+   width = 168
+   height = 168
+   num_ticks = 50
+   ticks_disappear = false
+   start_angle = -67
+   end_angle = -67
+   center_bitmap = "sao-circular.png"
+   tick_bitmap = "tick.png"
+}
+
+# help bar at the bottom
++ image { 
+    left = 18%
+    top = 100%-30
+    width = 20 
+    height = 20 
+    file = "fleches_haut_bas.png"
+}
++ hbox {
+    top = 100%-50
+    left = 20%
+
+#    + label { text = "↑↓" font = "DroidLogo Bold 20" color = "#fd262e" }
+    + label { text = ":select       " font = "DroidLogo Bold 20" color = "#3ec6ae" }
+    + label { text = "enter" font = "DroidLogo Bold 20" color = "#fd262e" }
+    + label { text = ":boot       " font = "DroidLogo Bold 20" color = "#3ec6ae" }
+    + label { text = "e" font = "DroidLogo Bold 20" color = "#fd262e" }
+    + label { text = ":edit       " font = "DroidLogo Bold 20" color = "#3ec6ae" }
+    + label { text = "c" font = "DroidLogo Bold 20" color = "#fd262e" }
+    + label { text = ":command-line       " font = "DroidLogo Bold 20" color = "#3ec6ae" }
+    + label { text = "esc" font = "DroidLogo Bold 20" color = "#fd262e" }
+    + label { text = ":retour menu" font = "DroidLogo Bold 20" color = "#3ec6ae" }
+}
