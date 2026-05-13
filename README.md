@@ -1,18 +1,14 @@
 # GRUB Theme Manager
 
-A simple interactive Bash script to install and switch between multiple GRUB themes
+A simple Bash script to install and switch between multiple GRUB themes
 ---
 
 ## Features
 
-* Interactive menu system
-* Supports a lot of GRUB themes
 * Automatically updates GRUB config
 * Removes old `GRUB_THEME` entries before adding new one
-* Checks if theme already exists before copying
 * Creates backup of `/etc/default/grub`
-* Easy to use
-
+* Switch between multiple themes by running install.sh script
 ---
 
 ## Available Themes
@@ -139,16 +135,6 @@ sudo ./install.sh
 ## CyberRe
 
 ![Preview](Preview/CyberRe.png)
-
-
-## How It Works
-
-1. Shows all available themes
-2. Lets you choose a theme by number
-3. Checks whether theme already exists in system
-4. Copies theme if needed
-5. Updates `/etc/default/grub`
-6. Regenerates GRUB configuration automatically
 
 ---
 
