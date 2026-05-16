@@ -22,9 +22,9 @@ A simple Bash script to install and switch between multiple GRUB themes
 7. fallout-grub
 8. grub-of-tsushima
 9. kawaii-grub
- 10. Mechanics_grub
- 11. minegrub
- 12. redbluepill
+10. Mechanics_grub
+11. minegrub
+12. redbluepill
 13. Sekiro
 14. terminator
 15. whitesur
