@@ -128,7 +128,7 @@ elif grep -qiE "debian|ubuntu|zorin|mint|pop" /etc/os-release; then
     echo "[+] Debian-based distro detected"
     update-grub
 
-elif grep -qiE "arch|manjaro|cachy|garuda" /etc/os-release; then
+elif grep -qiE "arch|manjaro|cachy|garuda|Endeavour" /etc/os-release; then
 
     echo "[+] Arch-based distro detected"
     grub-mkconfig -o /boot/grub/grub.cfg
