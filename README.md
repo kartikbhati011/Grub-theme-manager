@@ -79,7 +79,7 @@ sudo ./install.sh
 
 ## How to add extra themes
 
-1. Add exact folder name in THEMES LIST anywhere
+1. Add exact folder name in install.sh THEMES LIST anywhere
 2. Add +1 (35 to 36) in SHOW MENU and VALIDATION. that's it
 
 # Some Previews
